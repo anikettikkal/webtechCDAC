@@ -1,0 +1,17 @@
+.container{
+    width: 1200px;
+    margin:auto;
+    border: 1px solid #000;
+}
+
+.col-6{
+    width: 50%;   
+}
+
+.row{
+    display: flex;
+}
+
+.col-4{
+    width: 33.33%;
+}
