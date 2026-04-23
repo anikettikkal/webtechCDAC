@@ -13,9 +13,9 @@
 <body>
 
     <!-- Header Start -->
-    <header class="container">
+    <header class="container pt-3 pb-3">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 logo">
                 <img src="./layout (2)/layout/logo.png" alt="Logo" class="img-fluid">
             </div>
 
@@ -25,10 +25,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Active</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link " href="#">Link</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link " href="#">Link</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
@@ -39,6 +39,119 @@
     </header>
     <!-- Header End -->
 
+    <!-- Menu Start -->
+    <div class="container border-0 border-bottom border-3 pt-3 pb-3">
+        <nav class="navbar navbar-expand-lg navbarBack bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Menu End -->
+
+    <!-- Slider Start -->
+    <div class="container">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-6 slider-content">
+                            <h1>Welcome to Our Website</h1>
+                            <p>This is a simple welcome message for our website.
+                                We are glad to have you here. Explore our products and services. <br>
+                                Thank you for visiting!
+                            </p>
+                            <p>
+                                <button class="btn btn-warning">Visit Us</button>
+                            </p>
+                        </div>
+                        <div class="col-lg-6 slider-content">
+                            <img src="./layout (2)/layout/girl1.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-6 slider-content">
+                            <h1>Discover Our Products</h1>
+                            <p>Explore our wide range of products and find the perfect fit for your needs.
+                                We offer high-quality items at competitive prices. <br>
+                                Start shopping now and experience the difference!
+                            </p>
+                            <p>
+                                <button class="btn btn-warning">Shop Now</button>
+                            </p>
+                        </div>
+                        <div class="col-lg-6 slider-content">
+                            <img src="./layout (2)/layout/girl2.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-6 slider-content">
+                            <h1>Join Our Community</h1>
+                            <p>Become a part of our vibrant community and stay updated with the latest news and offers.
+                                Connect with like-minded individuals and share your experiences. <br>
+                                Sign up today and be a part of something great!
+                            </p>
+                            <p>
+                                <button class="btn btn-warning">Sign Up</button>
+                            </p>
+                        </div>
+                        <div class="col-lg-6 slider-content">
+                            <img src="./layout (2)/layout/girl3.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Slider End -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

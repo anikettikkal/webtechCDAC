@@ -1,47 +1,26 @@
-body{
-    font-size: 16px;
-    background-color: #fff;
-    color: #000;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+a{
+    color:#060606 !important; /* Override Bootstrap's default link color */
 }
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
+header a:hover{
+    color:#c32805 !important; /* Change to your desired hover color */
 }
 
-.img-fluid{
-    max-width: 100%;
-    height: auto;
-}
-
-.text-center{
-    text-align: center;
-}
-
-.mx-auto{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media only screen and (min-width: 1200px){
-    .container{
-        width: 1170px; 
+@media only screen and (max-width: 600px) {
+    .logo{
+        text-align: center;
     }
-   
-    .col-lg-3{
-        width: 25%;
-        box-sizing: border-box;
+
+    .justify-content-end{
+        justify-content: center !important;
     }
 }
 
-@media only screen and (max-width:600px){
-    .container{
-        width: 100%;
-    }
-    .col-6{
-        width: 50%;
-        box-sizing: border-box;
-    }
+.navbarBack{
+    background-color: #eaf6dc !important; /* Light background color */
+}
+
+.slider-content{
+    padding-left: 110px;
+    padding-top: 56px;
 }
