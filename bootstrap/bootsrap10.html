@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Message</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="p-5">
+
+    <!-- Button to trigger toast -->
+    <button id="liveToastBtn" class="btn btn-primary">
+        Show Toast
+    </button>
+
+    <!-- Toast -->
+    <div id="liveToast" class="toast position-fixed bottom-0 end-0 m-3" role="alert">
+        <div class="toast-header">
+            <strong class="me-auto">Bootstrap</strong>
+            <small>Now</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body">
+            Hello, world! This is a toast message.
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script -->
+    <script>
+        const toastTrigger = document.getElementById('liveToastBtn');
+        const toastElement = document.getElementById('liveToast');
+
+        const toast = new bootstrap.Toast(toastElement);
+
+        toastTrigger.addEventListener('click', () => {
+            toast.show();
+        });
+    </script>
+
+</body>
+
+</html>
