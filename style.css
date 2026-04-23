@@ -20,10 +20,15 @@ header a:hover{
 }
 
 .navbarBack{
-    background-color:#f6fbf7 !important; /* Light background color */
+    background-color:#fdecef !important; /* Light background color */
 }
 
 .slider-content{
     padding-left: 110px;
     padding-top: 56px;
+}
+
+footer {
+    background-color: #f8d7da;
+    color: #6b1e3b;
 }
