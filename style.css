@@ -6,6 +6,12 @@ header a:hover{
     color:#c32805 !important; /* Change to your desired hover color */
 }
 
+.copyright{
+    background-color: #f8d7da;
+    text-align: center;
+    color:#6b1e3b;
+}
+
 @media only screen and (max-width: 600px) {
     .logo{
         text-align: center;
@@ -26,6 +32,10 @@ header a:hover{
 .slider-content{
     padding-left: 110px;
     padding-top: 56px;
+}
+
+figures{
+    box-shadow: 0 4px 12px rgba(176, 48, 96, 0.15);
 }
 
 footer {
