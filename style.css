@@ -14,10 +14,13 @@ header a:hover{
     .justify-content-end{
         justify-content: center !important;
     }
+    .slider-content{
+        display: none;
+    }
 }
 
 .navbarBack{
-    background-color: #eaf6dc !important; /* Light background color */
+    background-color:#f6fbf7 !important; /* Light background color */
 }
 
 .slider-content{
