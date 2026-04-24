@@ -1,0 +1,14 @@
+<script>
+    let brands = ["Motrola","iphone","samsung","oneplus"];
+    console.log(brands);
+    
+    let i = 0;
+    let length = brands.length;
+    while(i<length){
+        console.log(brands[i]);
+        document.write(`
+        <li><input type="checkbox">${brands[i]}</li>
+        `)
+        i++;
+    }
+</script>

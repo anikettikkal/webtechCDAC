@@ -1,0 +1,12 @@
+<script>
+    let p = 2500000;
+    let r = 7.75;
+    let n = 30;
+    n = n * 12;
+    r = r / 12 / 100;
+    let emi = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1) ;
+    console.log("Emi is : " , emi);
+    console.log(Math.round(emi));
+    
+    
+</script>

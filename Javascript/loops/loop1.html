@@ -1,0 +1,13 @@
+<script>
+    let amount=150000;
+    let roi = 7.1;
+    let openingBal=0;
+
+    for (let i=0;i<=15;i++) {
+        let interest = (openingBal + amount)*roi/100;
+        interest = Math.round(interest);
+        let closeBal = openingBal + amount + interest;
+        console.log(i , openingBal , amount , interest , closeBal);
+        openingBal = closeBal ;
+    }
+</script>
