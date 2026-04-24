@@ -1,0 +1,41 @@
+<script>
+    function age(dob){
+        // console.log(dob);
+        // console.log(typeof(dob));
+        let ans = dob.split("-");
+        //console.log(ans);
+        let record = new Date();
+        // console.log(record);
+        // console.log(record.getFullYear());
+        let userAge = record.getFullYear() - ans[2];
+        console.log(userAge);
+        return userAge>=18?"Adult":"minor";
+    }
+    let result =age("26-06-2002");
+    console.log(result);
+
+    function upload(fileName){
+        if(fileName==""){
+            return "file is Empty";
+        }
+        else{
+            let result=fileName.split('.');
+            console.log(result);
+            if (result.length==1) {
+                return "Invalid File";
+            }
+            else{
+                let extension=result[result.length-1]
+                console.log(extension);
+                let allowExtension =["pdf","doc","docx"];
+                let result1=allowExtension.includes(extension);
+                console.log(result1);
+                return result1?"fileuploaded":"invalid file";
+            }
+        }
+
+    }
+    let ans = upload("myresume.myfil.png");
+    console.log(ans);
+    
+</script>

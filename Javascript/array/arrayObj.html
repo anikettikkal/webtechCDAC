@@ -1,3 +1,33 @@
 <script>
-    let 
+    let products=new Array();
+    products[0]={
+        name:"Motrola 60 Fusion",
+        price:22000,
+        path:'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRVJudK7YF3gs7w7RKdKnMseDjSqSZTXiIuL-q6NsyyrW8OORD1-aJFkMlR3Cfwn5dzxIoSQNFbwO5TcWzgCrHh7URsSUtwt8BsPrFqbq3r&usqp=CAc'
+    }
+    products[1]={
+        name:"Google Pixels 8",
+        price:25000,
+        path:"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQK0hyFVOINEP15G_EzyAqU_uvqWwZzsZ8TfCKDvphUsqYSRPv6p8ibLIs81O-mnDaIADBWxzNBqXzYSqr5-1dsW2cv1mFe2Dzr8sS2G-RlBI-VNXwfafHEkX4pmHLjGLAQEUcqK9E&usqp=CAc"
+    }
+    products[2]={
+        name:"Vivo x80",
+        price:34000,
+        path:"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRYNBrA7q8tfdkeoJNa-PeEx0yaicxsECxP7edKwPWCfzQpvnbraJb0CCRQWCItNLvvh16h0FRjz1Wy3zo20DVjz85wfCNuujz7eIW1AZc7bwG0r8pGlwudu6ns4NYCGJIrmWWCDlQ&usqp=CAc"
+    }
+
+    //console.log(products);
+
+    for(let value of products){
+        console.log(value);
+        document.write(`
+        <img src="${value.path}"></img>
+        <h2>${value.name}</h2>
+        <p>${value.price}</p>
+        <button>Add To Cart</button>
+    `)
+    }
+
+    
+    
 </script>
