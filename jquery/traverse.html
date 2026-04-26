@@ -1,0 +1,19 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<ul type="square">
+    <li>Mango</li>
+    <li>Banana</li>
+    <li class="p1">Orange</li>
+    <li>Apple</li>
+    <li>Grapes</li>
+    <li>Watermelon</li>
+</ul>
+
+<script>
+    $(".p1").click(function (){
+        $(this).css("background","red");
+        $(this).next().text("Apple is clicked");
+        $(this).prev().html("<b>Aniket</b>");
+        $(this).parent().css("border", "2px solid black");
+    });
+</script>

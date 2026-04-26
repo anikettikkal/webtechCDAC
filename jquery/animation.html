@@ -1,0 +1,14 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<button>
+    Start Animation
+</button> <br>
+
+<div style="background-color:blueviolet;width: 100px;height: 100px;margin-top: 50px;">
+
+</div>
+
+<script>
+    jQuery("button").click(() => {
+        $("div").animate({ marginLeft: "200px", height: "200px", width: "200px", borderRadius: "50%" }, 2000);
+    })
+</script>

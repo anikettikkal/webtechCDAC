@@ -1,0 +1,32 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<button id="btn1">Button1</button>
+<button id="btn2">Button2</button>
+<button id="btn3">Button3</button>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi sed dolorum officia vero fugiat asperiores
+    necessitatibus nisi officiis sequi nobis odio libero, quibusdam, vel sint. Quas numquam architecto, nam aperiam
+    inventore quisquam ad repellendus labore? Dolores facere illo asperiores alias, reiciendis assumenda ea natus
+    commodi deleniti quo aut maiores voluptas eaque totam qui quis ad ab consequuntur id itaque quam. Nisi veniam
+    cupiditate dignissimos repellendus quae voluptatibus, dolore eius? Dicta nemo, animi voluptates beatae voluptatum
+    praesentium illo quis cum iusto in magnam eligendi esse rem dolorem assumenda ratione, ad, ut nulla quidem quas
+    reprehenderit adipisci eius quaerat facilis. Quisquam, labore?
+</p>
+
+<script>
+    $("#btn1").click(()=>{
+        //$("p").hide();
+        //$("p").slideUp(1000);
+        $("p").fadeOut(1000);
+    });
+
+    $("#btn2").click(()=>{
+        //$("p").show();
+        //$("p").slideDown(1000);
+        $("p").fadeIn(1000);
+    })
+
+    $("#btn3").click(()=>{
+        //$("p").toggle(1000);
+        //$("p").slideToggle(1000);
+        $("p").fadeToggle(1000);
+    })
+</script>

@@ -1,0 +1,24 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+    // checking the document loaded first or not
+   $(document).ready(()=>{
+    $("li:first").css("background","grey");
+    $("li:last").css("background","skyblue");
+    $("li:eq(2)").css("background","yellow");
+    $("li:gt(2)").css("fontSize","30px");
+    $("li:lt(2)").css("fontFamily","Arial, Helvetica, sans-serif");
+    $("li:not(:eq(2))").css("text-decoration","underline");
+   }) 
+   
+</script>
+
+<ul type="square">
+    <li>Mango</li>
+    <li>Banana</li>
+    <li class="p1">Orange</li>
+    <li>Apple</li>
+    <li>Grapes</li>
+    <li>Watermelon</li>
+</ul>
+
