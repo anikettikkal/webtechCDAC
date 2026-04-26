@@ -1,0 +1,19 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<ul>
+    <li>Mango</li>
+    <li>Banana</li>
+    <li>Orange</li>
+    <li>watermelon</li>
+    <li>Lemon</li>
+    <li>Apple</li>
+</ul>
+
+<!-- how to select multiple elements by using loop each element one by one and here is ans -->
+<script>
+    $(document).ready(function(){
+        $("ul li").each(function(){
+            $(this).text(Math.random());
+        })
+    })
+</script>
