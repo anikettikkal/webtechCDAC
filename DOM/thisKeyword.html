@@ -1,0 +1,11 @@
+<input onchange="myFunction(this)" type="checkbox">
+<input id="pass" type="password" name="password">
+<script>
+    function myFunction(record) {
+        console.log(record);
+        document.getElementById("pass").type = record.checked ? "text" : "password";
+    }
+
+    
+
+</script>

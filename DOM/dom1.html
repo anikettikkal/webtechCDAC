@@ -1,0 +1,24 @@
+<div></div>
+<div></div>
+<div></div>
+<p class="p1"></p>
+<p class="p1"></p>
+<p class="p1"></p>
+
+<input type="text" name="country">
+<input type="text" name="country">
+<input type="text" name="country">
+
+
+<h1>Web Technologies</h1>
+<button>Click Me!</button>
+<script>
+    document.querySelector("button").addEventListener("click",()=>{
+        console.log(document.querySelectorAll("div"));
+        console.log(document.getElementsByTagName("div"));
+        console.log(document.getElementsByClassName("p1"));
+        console.log(document.getElementsByName("country"));
+        document.querySelector("h1").innerHTML = "Hello <i>Aniket</i>";
+        document.querySelector("h1").innerText = "Hello <i>Aniket</i>";    
+    })
+</script>

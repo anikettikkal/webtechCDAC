@@ -1,0 +1,28 @@
+<!-- Regular Expression -->
+<script>
+    // for validating pincode, mobile number and pan card number
+    let x1 = /^[1-9][0-9][0-9][0-9][0-9][0-9]$/;
+    let pincode = "413716";
+    let asn = x1.test(pincode);
+    console.log(asn);
+
+    let mobile = /^[6-9][0-9]{9}$/;
+    let mobileNumber = "9876543210";
+    let ans = mobile.test(mobileNumber);
+    console.log(ans);
+
+    let panCard =/^([a-zA-Z]{5})([0-9]{4})([a-zA-Z]{1})$/;
+    let panNumber = "ABCDE1234F";
+    let ans1= panCard.test(panNumber);
+    console.log(ans1);
+
+
+
+    // for user fullname
+    // let fullName =/^[A-Za-z]([A-Za-z ]{1,})?[A-Za-z]$/;
+    let fullName =/^[A-Za-z]([A-Za-z ]+)?[A-Za-z]$/;
+    let name ="Aniket Ramesh Tikkal";
+    let check = fullName.test(name);
+    console.log(check);
+
+</script>

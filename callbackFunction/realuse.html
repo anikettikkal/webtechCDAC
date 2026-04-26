@@ -1,0 +1,31 @@
+<button>
+    Click me
+</button>
+<div>
+
+</div>
+<style>
+    body {
+        height: 1000px;
+    }
+
+    div {
+        background-color: orangered;
+        height: 300px;
+        width: 300px;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        border-radius: 50%;
+    }
+</style>
+
+<script>
+    document.querySelector("div").style.display = "none";
+    document.querySelector("button").addEventListener("click", () => {
+        document.querySelector("div").style.display = "block";
+        setTimeout(()=>{
+            document.querySelector("div").style.display = "none";
+        },2000);
+    })
+</script>
