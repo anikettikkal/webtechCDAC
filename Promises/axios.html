@@ -1,0 +1,13 @@
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<button>Enter</button>
+
+<script>
+    document.querySelector("button").onclick = function(){
+        console.log(axios);
+        let ans = axios.get("https://jsonplaceholder.typicode.com/users");
+        console.log(ans);
+        ans.then((res)=>{
+            console.log(res.data);
+        }).catch().finally();
+    };
+</script>
